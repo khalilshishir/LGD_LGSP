@@ -1,0 +1,88 @@
+﻿
+ul.tabs
+{
+    padding: 5px 0;
+    font-size: 0;
+    margin:0;
+    list-style-type: none;
+    /*text-align: center;*/ /*set to left, center, or right to align the tabs as desired*/
+}
+        
+ul.tabs li
+{
+    display: inline;
+    margin: 0;
+    margin-right:3px; /*distance between tabs*/
+}
+        
+ul.tabs li a
+{
+    font: bold 11px Tahoma, Geneva, sans-serif;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 6px 0px 4px 5px;
+    /*border: 1px solid #B7B7B7;*/
+    color: #000;
+    /*border-radius: 8px 8px 0 0;*/
+    outline:none;
+	background: url(../images/tab-left.png) left top no-repeat;
+}
+
+ul.tabs li a span{
+	background: url(../images/right-tab.png) right top no-repeat;
+	padding: 6px 12px 4px 7px;	
+}
+        
+ul.tabs li a:visited
+{
+    color: #000;
+}
+        
+ul.tabs li a:hover
+{
+	color: #fff; 
+}
+        
+ul.tabs li.selected a
+{
+    /*selected tab style */
+    position: relative;
+    top: 0px;
+    font-weight:bold;
+    /*background: white url(tabbg.gif) 0 0 repeat-x;
+    border-bottom-color: white;*/
+	background: url(../images/active-left.png) left top no-repeat;
+	color: #fff;
+}
+
+ul.tabs li.selected a span{
+	background: url(../images/active-right.png) right top no-repeat;
+}
+        
+        
+ul.tabs li.selected a:hover
+{
+    /*selected tab style */
+    text-decoration: none;
+}
+        
+div.tabcontent
+{
+    display: block;
+}
+
+div.tabcontents
+{
+    border: 1px solid #4472d0; padding:30px 30px 10px 30px;
+	background: #f3f4f8 url(../images/tab-back.png) right bottom no-repeat;
+    /*border-radius: 8px;*/
+}
+
+
+.tab-menu{ float: left;  width: 200px; margin-right: 25px; color: #27371e; font: normal 12px Tahoma, Geneva, sans-serif; }
+
+.tab-menu h4{ margin-bottom: 10px; }
+.tab-menu ul{ margin-bottom: 20px; }
+.tab-menu ul li a{ display: block; background: url(../images/left-arrow.png) left 5px no-repeat; padding-left: 12px; font: normal 12px Tahoma, Geneva, sans-serif; color: #27371e; margin-bottom: 3px;  }
+.tab-menu ul li a:hover{ text-decoration:underline; color: #000; }
