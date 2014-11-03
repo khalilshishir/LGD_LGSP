@@ -7,6 +7,8 @@
 		<g:message code="afmBankBranch.branchName.label" default="Branch Name" />
 		<span class="required-indicator">*</span>
 	</label>
+
+
 	<g:textField name="branchName" maxlength="75" required="" value="${afmBankBranchInstance?.branchName}"/>
 </div>
 
